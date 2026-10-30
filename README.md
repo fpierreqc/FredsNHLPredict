@@ -1,4 +1,4 @@
-# Bendevine — Équation Fred
+# Équation Fred
 
 Modèle de prédiction des matchs de la LNH (Elo adapté) derrière Bendevine.ca.
 
