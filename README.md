@@ -26,3 +26,7 @@ python3 elo_fred.py update MTL TOR 3 2 --ot
 ## À brancher
 
 Remplacer `elo_current.json` par les vraies cotes issues de `elo_2025-26_final.json` (régressées d'un tiers vers 1500) et rejouer le CSV.
+
+## Pointage (score_fred.py)
+
+Couche Poisson au-dessus de l'Elo : `python3 tools/pointage.py "CHI@BOS" "CGY@COL:away_b2b" "OTT@SJS:away_sub"` imprime le pointage le plus probable, le top 3, P(total > 6,5) et P(favori par 2+). `python3 tools/test_score.py` compare les règles de pointage sur la saison (3-2 fixe, 4-2 si tranché, Poisson).
