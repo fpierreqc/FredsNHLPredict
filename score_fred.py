@@ -11,7 +11,8 @@ from collections import defaultdict
 SPARAMS = dict(
     PRIOR=20,       # matchs fictifs à la moyenne de la ligue (régression)
     LEAGUE=3.05,    # buts par équipe par match (prior de départ)
-    DIFF=1.10,      # écart attendu = DIFF * log-odds(p)  (buts)
+    DIFF=1.50,      # écart attendu = DIFF * log-odds(p)  (buts) — 1,5 depuis le 5 nov. (meilleur Brier « par 2+ »)
+    BIG=0.42,       # P(favori par 2+) à partir de laquelle on publie 4-2 au lieu de 3-2
     MAXG=9,
 )
 
@@ -43,10 +44,13 @@ class ScoreFred:
         return max(lh, 0.4), max(la, 0.4)
 
     def predict(self, home, away, p_home, pick_home=None):
-        """Pointage le plus probable (buts domicile, buts visiteur), cohérent avec le gagnant prédit.
-        La masse des « nuls » est redistribuée au favori à l'écart 1 (prolongation)."""
+        """Pointage Fred v2 (5 nov.) : 3-2 pour le gagnant prédit, 4-2 si P(favori par 2+) >= BIG.
+        Le total de buts n'a montré aucun pouvoir prédictif (Brier pire qu'une constante sur 250 matchs) :
+        on ne publie plus le mode Poisson brut (4-3 trop souvent), seulement l'écart."""
         t = self.table(home, away, p_home)
-        return t["top"][0][0], (t["lambda_home"], t["lambda_away"])
+        if pick_home is None: pick_home = p_home >= .5
+        s = (4, 2) if t["p_fav_by2"] >= self.p["BIG"] else (3, 2)
+        return (s if pick_home else s[::-1]), (t["lambda_home"], t["lambda_away"])
 
     def update(self, home, away, hg, ag):
         self.gf[home] += hg; self.ga[home] += ag; self.gf[away] += ag; self.ga[away] += hg

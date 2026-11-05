@@ -22,7 +22,8 @@ def run(G, start, score_rule, sparams=None):
 def fixed32(sf, h, a, ph, pick): return (3, 2) if pick else (2, 3)
 def conf42(sf, h, a, ph, pick):
     s = (4, 2) if abs(ph - .5) > CONF else (3, 2); return s if pick else s[::-1]
-def poisson(sf, h, a, ph, pick): return sf.predict(h, a, ph, pick)[0]
+def poisson(sf, h, a, ph, pick):  # mode Poisson brut (v1, retiré le 5 nov.)
+    return max(sf.table(h, a, ph)['top'], key=lambda x: x[1])[0]
 def poisson_round(sf, h, a, ph, pick):  # arrondi des lambdas, forcé cohérent
     (lh, la) = sf.lambdas(h, a, ph); hg, ag = round(lh), round(la)
     if pick and hg <= ag: hg = ag + 1
@@ -36,6 +37,7 @@ if __name__ == "__main__":
     print("4-2 si tranché ", fmt(run(G, S, conf42)))
     print("Poisson défaut ", fmt(run(G, S, poisson)))
     print("Poisson arrondi", fmt(run(G, S, poisson_round)))
+    print("Pointage v2    ", fmt(run(G, S, lambda sf,h,a,ph,pk: sf.predict(h,a,ph,pk)[0])))
     print("--- grille Poisson (PRIOR, DIFF) ---")
     for P, D in itertools.product((10, 20, 40, 1000), (0.6, 0.9, 1.1, 1.4, 1.8)):
         r = run(G, S, poisson, dict(PRIOR=P, DIFF=D)); print(f"PRIOR={P:<4} DIFF={D:<4}", fmt(r))
