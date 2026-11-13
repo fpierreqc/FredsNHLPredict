@@ -12,7 +12,8 @@ SPARAMS = dict(
     PRIOR=20,       # matchs fictifs à la moyenne de la ligue (régression)
     LEAGUE=3.05,    # buts par équipe par match (prior de départ)
     DIFF=1.50,      # écart attendu = DIFF * log-odds(p)  (buts) — 1,5 depuis le 5 nov. (meilleur Brier « par 2+ »)
-    BIG=0.42,       # P(favori par 2+) à partir de laquelle on publie 4-2 au lieu de 3-2
+    BIG=0.42,       # (v2, retiré) P(favori par 2+) à partir de laquelle on publiait 4-2
+    BIG_P=0.66,     # v3 : cote Elo du favori à partir de laquelle on publie 4-2 au lieu de 3-2
     MAXG=9,
 )
 
@@ -44,13 +45,13 @@ class ScoreFred:
         return max(lh, 0.4), max(la, 0.4)
 
     def predict(self, home, away, p_home, pick_home=None):
-        """Pointage Fred v2 (5 nov.) : 3-2 pour le gagnant prédit, 4-2 si P(favori par 2+) >= BIG.
-        Le total de buts n'a montré aucun pouvoir prédictif (Brier pire qu'une constante sur 250 matchs) :
-        on ne publie plus le mode Poisson brut (4-3 trop souvent), seulement l'écart."""
-        t = self.table(home, away, p_home)
+        """Pointage Fred v3 (13 nov.) : 3-2 pour le gagnant prédit, 4-2 si la cote du favori >= BIG_P (0,66).
+        Même résultat rejoué que la v2 (28 exacts sur 309 contre 26 pour le 3-2 fixe), mais la règle ne dépend
+        plus du Poisson : le total de buts reste sans pouvoir prédictif (Component Elo : corrélation ~0)."""
         if pick_home is None: pick_home = p_home >= .5
-        s = (4, 2) if t["p_fav_by2"] >= self.p["BIG"] else (3, 2)
-        return (s if pick_home else s[::-1]), (t["lambda_home"], t["lambda_away"])
+        s = (4, 2) if max(p_home, 1 - p_home) >= self.p["BIG_P"] else (3, 2)
+        lh, la = self.lambdas(home, away, p_home)
+        return (s if pick_home else s[::-1]), (lh, la)
 
     def update(self, home, away, hg, ag):
         self.gf[home] += hg; self.ga[home] += ag; self.gf[away] += ag; self.ga[away] += hg

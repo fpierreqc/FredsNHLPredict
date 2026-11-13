@@ -30,3 +30,5 @@ Remplacer `elo_current.json` par les vraies cotes issues de `elo_2025-26_final.j
 ## Pointage (score_fred.py)
 
 Couche Poisson au-dessus de l'Elo : `python3 tools/pointage.py "CHI@BOS" "CGY@COL:away_b2b" "OTT@SJS:away_sub"` imprime le pointage le plus probable, le top 3, P(total > 6,5) et P(favori par 2+). `python3 tools/test_score.py` compare les règles de pointage sur la saison (3-2 fixe, 4-2 si tranché, Poisson).
+
+`python3 tools/skills_test.py` : tests walk-forward inspirés des skills PuckAPI (variantes Elo, calibration/Platt, Component Elo pour les totaux).

@@ -37,7 +37,7 @@ if __name__ == "__main__":
     print("4-2 si tranché ", fmt(run(G, S, conf42)))
     print("Poisson défaut ", fmt(run(G, S, poisson)))
     print("Poisson arrondi", fmt(run(G, S, poisson_round)))
-    print("Pointage v2    ", fmt(run(G, S, lambda sf,h,a,ph,pk: sf.predict(h,a,ph,pk)[0])))
+    print("Pointage v3    ", fmt(run(G, S, lambda sf,h,a,ph,pk: sf.predict(h,a,ph,pk)[0])))
     print("--- grille Poisson (PRIOR, DIFF) ---")
     for P, D in itertools.product((10, 20, 40, 1000), (0.6, 0.9, 1.1, 1.4, 1.8)):
         r = run(G, S, poisson, dict(PRIOR=P, DIFF=D)); print(f"PRIOR={P:<4} DIFF={D:<4}", fmt(r))
