@@ -1,0 +1,62 @@
+date,away,home,pick,p_pick,tranche,pointage,gardien_vis,statut_vis,gardien_dom,statut_dom,away_sub,home_sub,away_b2b,home_b2b,publie_utc
+2026-11-14,MIN,BOS,BOS,0.512,0,BOS 3-2,Wallstedt,confirmé,Swayman,confirmé,0,0,0,0,2026-11-14T21:45:42Z
+2026-11-14,EDM,TOR,EDM,0.629,1,EDM 3-2,Levi,non confirmé,Stolarz,confirmé,0,1,0,0,2026-11-14T21:45:42Z
+2026-11-14,COL,MTL,COL,0.526,0,COL 3-2,Blackwood,confirmé,Dobes,confirmé,0,1,0,0,2026-11-14T21:45:42Z
+2026-11-14,DET,TBL,TBL,0.709,1,TBL 4-2,Tarasov,probable,Vasilevskiy,probable,1,0,0,0,2026-11-14T21:45:42Z
+2026-11-14,OTT,PIT,OTT,0.557,0,OTT 3-2,Ullmark,confirmé,Murashov,confirmé,0,1,0,0,2026-11-14T21:45:42Z
+2026-11-14,NJD,WSH,NJD,0.520,0,NJD 3-2,Hellebuyck,non confirmé,Lindgren,confirmé,0,1,0,0,2026-11-14T21:45:42Z
+2026-11-14,PHI,CBJ,CBJ,0.534,0,CBJ 3-2,Woll,confirmé,Greaves,confirmé,0,0,0,0,2026-11-14T21:45:42Z
+2026-11-14,FLA,STL,STL,0.527,0,STL 3-2,Markstrom,confirmé,Hofer,confirmé,0,0,0,0,2026-11-14T21:45:42Z
+2026-11-14,BUF,DAL,DAL,0.599,1,DAL 3-2,Lyon,confirmé,Oettinger,confirmé,1,0,0,0,2026-11-14T21:45:42Z
+2026-11-14,SJS,UTA,UTA,0.605,1,UTA 3-2,Askarov,confirmé,Vejmelka,probable,0,0,0,0,2026-11-14T21:45:42Z
+2026-11-14,NYI,ANA,ANA,0.585,1,ANA 3-2,Varlamov,probable,Dostal,non confirmé,1,0,0,0,2026-11-14T21:45:42Z
+2026-11-14,CGY,LAK,LAK,0.511,0,LAK 3-2,Wolf,confirmé,Forsberg,confirmé,0,1,0,0,2026-11-14T21:45:42Z
+2026-11-15,EDM,PHI,EDM,0.559,0,EDM 3-2,Levi,non confirmé,Vladar,confirmé,0,0,1,1,2026-11-15T21:45:30Z
+2026-11-15,FLA,DAL,DAL,0.597,1,DAL 3-2,Markstrom,non confirmé,Oettinger,non confirmé,0,0,1,1,2026-11-15T21:45:30Z
+2026-11-15,CGY,ANA,ANA,0.597,1,ANA 3-2,Cooley,non confirmé,Dostal,non confirmé,0,0,1,1,2026-11-15T21:45:30Z
+2026-11-15,VAN,VEG,VEG,0.759,1,VEG 4-2,Merilainen,non confirmé,Hill,non confirmé,0,0,0,0,2026-11-15T21:45:30Z
+2026-11-15,NSH,SJS,NSH,0.592,1,NSH 3-2,Saros,non confirmé,Askarov,non confirmé,0,0,0,1,2026-11-15T21:45:30Z
+2026-11-16,MTL,NYR,MTL,0.594,1,MTL 3-2,Fowler,confirmé,Korpisalo,probable,0,1,0,0,2026-11-16T21:46:30Z
+2026-11-16,VAN,UTA,UTA,0.743,1,UTA 4-2,Tolopilo,probable,Cossa,non confirmé,1,1,1,0,2026-11-16T21:46:30Z
+2026-11-17,LAK,BOS,BOS,0.691,1,BOS 4-2,Forsberg,non confirmé,Swayman,non confirmé,1,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,BUF,PHI,PHI,0.509,0,PHI 3-2,Lyon,non confirmé,Woll,non confirmé,1,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,CBJ,NYI,NYI,0.603,1,NYI 3-2,Talbot,non confirmé,Sorokin,non confirmé,1,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,EDM,FLA,EDM,0.530,0,EDM 3-2,Levi,non confirmé,Markstrom,non confirmé,0,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,OTT,WPG,OTT,0.572,0,OTT 3-2,Ullmark,non confirmé,Daws,non confirmé,0,1,0,0,2026-11-17T21:45:51Z
+2026-11-17,WSH,TBL,TBL,0.615,1,TBL 3-2,Thompson,non confirmé,Vasilevskiy,non confirmé,0,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,TOR,CHI,TOR,0.523,0,TOR 3-2,Bobrovsky,non confirmé,Knight,non confirmé,0,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,NSH,MIN,MIN,0.614,1,MIN 3-2,Saros,non confirmé,Wallstedt,non confirmé,0,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,ANA,STL,STL,0.526,0,STL 3-2,Husso,non confirmé,Binnington,non confirmé,1,1,0,0,2026-11-17T21:45:51Z
+2026-11-17,DAL,VEG,VEG,0.525,0,VEG 3-2,Oettinger,non confirmé,Hill,non confirmé,0,0,0,0,2026-11-17T21:45:51Z
+2026-11-17,CGY,SJS,SJS,0.533,0,SJS 3-2,Wolf,non confirmé,Askarov,non confirmé,0,0,0,0,2026-11-17T21:45:51Z
+2026-11-18,BOS,DET,BOS,0.544,0,BOS 3-2,Swayman,non confirmé,Tarasov,confirmé,0,1,1,0,2026-11-18T21:46:23Z
+2026-11-18,MTL,NJD,NJD,0.522,0,NJD 3-2,Fowler,non confirmé,Hellebuyck,non confirmé,0,0,0,0,2026-11-18T21:46:23Z
+2026-11-18,COL,UTA,COL,0.581,1,COL 3-2,Blackwood,non confirmé,Vejmelka,non confirmé,0,0,0,0,2026-11-18T21:46:23Z
+2026-11-19,PHI,OTT,OTT,0.617,1,OTT 3-2,Vladar,non confirmé,Ullmark,non confirmé,0,0,0,0,2026-11-19T21:46:04Z
+2026-11-19,MTL,CAR,CAR,0.683,1,CAR 4-2,Dobes,confirmé,Kochetkov,non confirmé,1,0,1,0,2026-11-19T21:46:04Z
+2026-11-19,BUF,WSH,WSH,0.520,0,WSH 3-2,Luukkonen,non confirmé,Thompson,non confirmé,0,0,0,0,2026-11-19T21:46:04Z
+2026-11-19,STL,PIT,PIT,0.533,0,PIT 3-2,Hofer,non confirmé,Silovs,non confirmé,0,0,0,0,2026-11-19T21:46:04Z
+2026-11-19,LAK,TOR,LAK,0.540,0,LAK 3-2,Kuemper,non confirmé,Stolarz,non confirmé,0,1,0,0,2026-11-19T21:46:04Z
+2026-11-19,NYI,WPG,NYI,0.542,0,NYI 3-2,Sorokin,non confirmé,Daws,non confirmé,0,1,0,0,2026-11-19T21:46:04Z
+2026-11-19,EDM,TBL,TBL,0.554,0,TBL 3-2,Levi,non confirmé,Vasilevskiy,non confirmé,0,0,0,0,2026-11-19T21:46:04Z
+2026-11-19,CBJ,CHI,CHI,0.512,0,CHI 3-2,Talbot,non confirmé,Knight,non confirmé,1,0,0,0,2026-11-19T21:46:04Z
+2026-11-19,MIN,CGY,MIN,0.634,1,MIN 3-2,Wallstedt,non confirmé,Wolf,non confirmé,0,0,0,0,2026-11-19T21:46:04Z
+2026-11-19,ANA,COL,COL,0.598,1,COL 3-2,Dostal,non confirmé,Blackwood,non confirmé,0,0,0,1,2026-11-19T21:46:04Z
+2026-11-19,VAN,SEA,SEA,0.665,1,SEA 4-2,Merilainen,non confirmé,Grubauer,non confirmé,0,0,0,0,2026-11-19T21:46:04Z
+2026-11-19,DAL,VEG,DAL,0.506,0,DAL 3-2,Oettinger,non confirmé,Hart,non confirmé,0,0,0,0,2026-11-19T21:46:04Z
+2026-11-21,PIT,NSH,NSH,0.564,0,NSH 3-2,Silovs,non confirmé,Saros,non confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-21,BUF,FLA,BUF,0.504,0,BUF 3-2,Luukkonen,non confirmé,Markstrom,non confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-21,NJD,STL,NJD,0.509,0,NJD 3-2,Hellebuyck,non confirmé,Hofer,non confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-21,NYI,DET,NYI,0.504,0,NYI 3-2,Sorokin,non confirmé,Gibson,confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-21,CBJ,TOR,CBJ,0.503,0,CBJ 3-2,Talbot,non confirmé,Stolarz,non confirmé,1,1,0,0,2026-11-21T21:45:38Z
+2026-11-21,WSH,BOS,BOS,0.596,1,BOS 3-2,Thompson,non confirmé,Swayman,confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-21,LAK,OTT,OTT,0.580,0,OTT 3-2,Kuemper,non confirmé,Ersson,non confirmé,0,1,0,0,2026-11-21T21:45:38Z
+2026-11-21,VEG,WPG,VEG,0.512,0,VEG 3-2,Hart,non confirmé,Skinner,non confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-21,PHI,MTL,MTL,0.587,1,MTL 3-2,Vladar,non confirmé,Dobes,non confirmé,0,1,0,0,2026-11-21T21:45:38Z
+2026-11-21,ANA,UTA,UTA,0.556,0,UTA 3-2,Dostal,non confirmé,Vejmelka,non confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-21,SEA,SJS,SEA,0.532,0,SEA 3-2,Grubauer,non confirmé,Nedeljkovic,non confirmé,0,1,0,0,2026-11-21T21:45:38Z
+2026-11-21,MIN,VAN,MIN,0.748,1,MIN 4-2,Wallstedt,non confirmé,Merilainen,non confirmé,0,0,0,0,2026-11-21T21:45:38Z
+2026-11-22,BUF,TBL,TBL,0.692,1,TBL 4-2,Lyon,non confirmé,Vasilevskiy,non confirmé,1,0,1,0,2026-11-22T21:45:37Z
+2026-11-22,PIT,DAL,DAL,0.716,1,DAL 4-2,Murashov,non confirmé,Oettinger,non confirmé,1,0,1,0,2026-11-22T21:45:37Z
+2026-11-22,EDM,STL,EDM,0.571,0,EDM 3-2,Jarry,non confirmé,Binnington,non confirmé,0,1,1,1,2026-11-22T21:45:37Z
+2026-11-22,CHI,VAN,CHI,0.526,0,CHI 3-2,Commesso,probable,Tolopilo,probable,1,1,1,1,2026-11-22T21:45:37Z
